@@ -1,0 +1,185 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Projects</title>
+</head>
+<style>
+     #bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    }.bg-dark{
+    background-color: #343a4073!important;
+    }
+     .navbar-dark .navbar-brand {
+    color: #0c0a0a;
+    font-size: 2rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+    color: rgb(12 12 12);
+    }
+    .btn-secondary {
+    color: #dee2e6;
+    background-color: #212529;
+    border-color: #212529;
+    border-width: medium;
+    border-radius: 2.3rem;
+    width: 97%;
+    }
+    .card{
+    background-color: #e9ecef59;
+    margin-left: 50px;
+    }
+    .row {
+    margin-top: 8px;
+    }
+    .list-group-item{
+    background-color: #dae0e5;
+    }
+    a{
+    color: #e80404;
+    }
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #343a4073!important;
+   color: black;
+   text-align: center;
+   }
+   .social {
+    width: 45px;
+    height: 45px;
+    }
+    ul {
+    padding: 0;
+    list-style-type: none;
+    }
+
+
+
+
+</style>
+<body id="bg" style="background-image: url('{% static "images/tech.jpg"%}')"; >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><b>PORTFOLIO</b></a>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/" about="button">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/skills" about="button">SKILLS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="btn btn-secondary btn-lg" href="/projects" about="button"><span
+                        style="color:red;font-weight:bold">PROJECTS</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/certifications" about="button">CERTIFICATIONS</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src={% static 'images/rasp.jpg' %} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Vehicle Collision Avoidance System</h5>
+                <p class="card-text"> An IoT Based System to design an efficient automatic authorized Vehicle Collision
+                    Avoidance System using Raspberry pi 3 and ultrasonic sensors. </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Project type : An IoT based system</li>
+                <li class="list-group-item">Work in Project : Traffic Management</li>
+            </ul>
+            <div class="card-body">
+                <a href={% static 'images/82.GSJ1868.pdf' %} class="card-link">Research Paper</a>
+                <a href={% static 'images/ppr.jpg' %} class="card-link">Certificate</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src={% static 'images/java.jpg' %} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Student Result Management System</h5>
+                <p class="card-text">It is an Web Application where students can see their results by entering the
+                    credentials. Student can access their data easily.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Project type : Web Based Application</li>
+                <li class="list-group-item">Work in Project : Result Management</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Research Paper</a>
+                <a href="#" class="card-link">Certificate</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card" style="width: 30rem;">
+            <img class="card-img-top" src={% static 'images/tfa3.jpg' %} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Two Factor Authentication</h5>
+                <p class="card-text">Two-factor authentication has been recently introduced to meet the demand of
+                    organizations for providing a stronger and safer authentication process for their users.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Project type : Web Based Application</li>
+                <li class="list-group-item">Work in Project : Security Management</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Research Paper</a>
+                <a href="#" class="card-link">Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <h4>Contact Me</h4>
+    <p id="mob" style="font-size:20px">Mobile no. : <b>7083594507</b></p>
+    <p style="font-size:20px">Send email : <a id="email" href="mailto:rautashwajit2137@gmail.com"><b>rautashwajit2137@gmail.com</b></a>
+    </p>
+
+    <ul class="social-links">
+        <li><img class="social" src="{% static 'images/facebook1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/twitter1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/linkedin1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/instagram1.png' %}"></li>
+    </ul>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

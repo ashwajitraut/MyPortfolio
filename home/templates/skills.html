@@ -1,0 +1,157 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Skills</title>
+</head>
+<style>
+     #bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    }
+    .bg-dark{
+    background-color: #343a4073!important;
+    }
+     .navbar-dark .navbar-brand {
+    color: #0c0a0a;
+    font-size: 2rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+    color: rgb(12 12 12);
+    }
+    .btn-secondary {
+    color: #dee2e6;
+    background-color: #212529;
+    border-color: #212529;
+    border-width: medium;
+    border-radius: 2.3rem;
+    width: 97%;
+    }
+      .card{
+      margin-left: 93px;
+      margin-top: 149px;
+      }
+      .row {
+    margin-right: 0px;
+    margin-left: -45px;
+    margin-top: -125px;
+    }
+      .col-md-4 .card{
+    background-color: #8080802b;
+    border-color: #00000008;
+    }
+      .col-md-8 .card{
+    background-color: #8080802b;
+    border-color: #00000008;
+    }
+     .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #343a4073!important;
+   color: black;
+   text-align: center;
+   }
+   .social {
+    width: 45px;
+    height: 45px;
+    }
+
+
+</style>
+<body id="bg" style="background-image: url('{% static "images/tech.jpg"%}')";>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><b>PORTFOLIO</b></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/" about="button">HOME</a>
+            </li>
+            <li class="nav-item active">
+                <a class="btn btn-secondary btn-lg" href="/skills" about="button"><span style="color:red;font-weight:bold">SKILLS</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/projects" about="button">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary btn-lg" href="/certifications" about="button">CERTIFICATIONS</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-body h-100">
+            <h3 style="font-size:40px"><b>Soft Skills</b></h3>
+            <hr>
+            <p style="font-size:26px">
+                Leadership<br>
+                Teamwork<br>
+                Communication<br>
+                Adaptability<br>
+                Quick Learner<br>
+                Problem Solving<br>
+            </p>
+
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card card-body h-100">
+            <h3 style="font-size:40px"><b>Hard Skills</b></h3>
+            <hr>
+            <ul style="font-size:26px">
+                <li>Front End Technologies such as <b>HTML, CSS, JAVASCRIPT</b></li>
+                <li>Programming Languages such as <b>C, C++, JAVA, PYTHON, JAVASCRIPT</b></li>
+                <li>For handling the Database such as <b>MYSQL</b></li>
+                <li>Frameworks for Python development like <b>DJANGO</b></li>
+                <li>Software Development Tools such as <b>VScode, PyCharm, Sublime Text, Spyder, Jupyter Notebook</b>
+                </li>
+                <li>Good knowledge of <b>Object Oriented Programming, Data Structures, Machine Learning</b> and <b>Algorithms</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <h4>Contact Me</h4>
+    <p id="mob" style="font-size:20px">Mobile no. : <b>7083594507</b></p>
+    <p style="font-size:20px">Send email : <a id="email" href="mailto:rautashwajit2137@gmail.com"><b>rautashwajit2137@gmail.com</b></a>
+    </p>
+
+    <ul class="social-links">
+        <li><img class="social" src="{% static 'images/facebook1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/twitter1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/linkedin1.png' %}"></li>
+        <li><img class="social" src="{% static 'images/instagram1.png' %}"></li>
+    </ul>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
